@@ -1,0 +1,198 @@
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  
+  -webkit-animation: changing-color 6s linear infinite alternate both;
+  animation: changing-color 6s linear infinite alternate both;
+  
+  height: 100vh;
+  width: 100vw;
+
+  color: #34355B;
+
+}
+
+div {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: #FFF;
+  border-radius: 0.5rem;
+  padding: 6.4rem 4.8rem;
+
+  width: 42.8rem;
+  height: fit-content;
+  filter: drop-shadow(0 0 0.75rem black);
+}
+
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  text-align: center;
+  margin-bottom: 1.4rem;
+}
+
+p {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+
+  font-size: 1.6rem;
+  line-height: 2rem;
+  text-align: center;
+
+  margin-bottom: 2rem;
+}
+
+button {
+  background-color: #FFF;
+  border: none;
+}
+
+.screen1 img:hover {
+  -webkit-animation: vibrate-2 0.3s linear infinite both;
+  animation: vibrate-2 0.3s linear infinite both;
+}
+
+/* Screen-2*/
+.screen2 p {
+  font-family: Dancing Script;
+  font-style: normal;
+  font-weight: 400;
+  
+  font-size: 2.8rem;
+  line-height: 2.9rem;
+  text-align: center;
+  
+  color: #000;
+
+  background: #E4EDF1;
+  box-shadow: 2px 2px 4px rgba(85, 85, 85, 0.371);
+  
+  padding: 1rem;
+}
+
+.screen2 img {
+  margin-block: 5rem;
+}
+
+button {
+  font-family: DM Sans;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+
+  text-align: center;
+  
+  border-radius: 4px;
+  padding: 1.6rem;
+  margin-top: 1.7rem;
+  
+  background: #FF9500;
+  color: #FFF;
+}
+
+button:hover {
+  cursor: pointer;
+  scale: 1.01;
+  box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.200);
+}
+
+/* ============== Background color change ================= */
+
+@-webkit-keyframes changing-color {
+  0% {
+    background: #190361;
+  }
+  100% {
+    background: #bb00ff;
+  }
+}
+
+@keyframes changing-color {
+  0% {
+    background: #190361;
+  }
+  100% {
+    background: #bb00ff;
+  }
+}
+
+/* ============== Animations ================= */
+
+@-webkit-keyframes vibrate-2 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+  40% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+  60% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+
+}
+
+@keyframes vibrate-2 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+  40% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+  60% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
