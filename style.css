@@ -120,6 +120,18 @@ button:hover {
   box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.200);
 }
 
+/* ======================= mobile ======================= */
+@media (max-width: 580px) {
+  div {
+    scale: 0.7;
+  }
+
+  .screen1 img {
+    -webkit-animation: vibrate-2 0.3s linear infinite both;
+    animation: vibrate-2 0.3s linear infinite both;
+  }
+}
+
 /* ============== Background color change ================= */
 
 @-webkit-keyframes changing-color {
